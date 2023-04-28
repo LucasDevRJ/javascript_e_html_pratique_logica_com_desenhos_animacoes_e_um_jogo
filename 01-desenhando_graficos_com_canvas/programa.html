@@ -1,5 +1,19 @@
-<canvas width="600" height="400"></canvas> //área da tela para podermos desenhar
+<!--área da tela para podermos desenhar-->
+<!--passando a largura (width) e a altura (height)-->
+<canvas width="600" height="400"></canvas> 
 
 <script>
-	
+	//armazenando o Canvas em uma variável
+	var tela = document.querySelector("canvas");
+
+	//criando pincel para escrever na tela
+	var pincel = tela.getContext("2d");
+
+	//função para escolher a cor do pincel
+	pincel.fillStyle = "lightgrey";
+
+	//função para desenhar em forma de quadrado a tela
+	//passando as coordenadas x (largura) y (altura)
+	//como também o tamanho e a largura do desenho
+	pincel.fillRect(0, 0, 600, 400);
 </script>
