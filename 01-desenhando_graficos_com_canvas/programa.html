@@ -25,4 +25,19 @@
 	//com largura de 200 e tamanho de 400
 	pincel.fillStyle = "red";
 	pincel.fillRect(400, 0, 200, 400);
+
+	pincel.fillStyle = "yellow";
+
+	//função para mover o pincel
+	pincel.beginPath();
+
+	//função para mover o x e y do pincel
+	pincel.moveTo(300, 200);
+
+	//função para desenhar no x e y
+	pincel.lineTo(200, 400);
+	pincel.lineTo(400, 400);
+
+	//função para preencher o desenho triangular
+	pincel.fill();
 </script>
