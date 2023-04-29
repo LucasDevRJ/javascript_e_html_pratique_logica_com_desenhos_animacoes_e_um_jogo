@@ -16,6 +16,7 @@
 		pincel.strokeRect(x, y, 50, 50);
 	}
 
+	/*
 	//quadrados um do lado do outro
 	desenhaQuadrado(0, 0, "green");
 	desenhaQuadrado(50, 0, "green");
@@ -25,4 +26,13 @@
 	desenhaQuadrado(170, 0, "red");
 	desenhaQuadrado(170, 50, "red");
 	desenhaQuadrado(170, 100, "red");
+	*/
+
+	var x = 0;
+	while (x < 600) {
+		desenhaQuadrado(x, 0, "green");
+		desenhaQuadrado(x, 50, "red");
+		desenhaQuadrado(x, 100, "blue");
+		x = x + 50;
+	}
 </script>
