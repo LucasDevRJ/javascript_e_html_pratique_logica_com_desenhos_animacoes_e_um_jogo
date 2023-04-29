@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	function desenhaQuadradoVerde() {
+		var tela = document.querySelector("canvas");
+		var pincel = tela.getContext("2d");
+
+		pincel.fillStyle = "green";
+
+		//para colocar cor na borda
+		pincel.fillStroke = "black";
+
+		pincel.fillRect(0, 0, 50, 50);
+		//função para criar borda
+		pincel.strokeRect(0, 0, 50, 50);
+	}
+
+	desenhaQuadradoVerde();
+</script>
