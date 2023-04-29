@@ -2,19 +2,27 @@
 
 <script>
 
-	function desenhaQuadradoVerde() {
+	function desenhaQuadrado(x, y, cor) {
 		var tela = document.querySelector("canvas");
 		var pincel = tela.getContext("2d");
 
-		pincel.fillStyle = "green";
+		pincel.fillStyle = cor;
 
 		//para colocar cor na borda
 		pincel.fillStroke = "black";
 
-		pincel.fillRect(0, 0, 50, 50);
+		pincel.fillRect(x, y, 50, 50);
 		//função para criar borda
-		pincel.strokeRect(0, 0, 50, 50);
+		pincel.strokeRect(x, y, 50, 50);
 	}
 
-	desenhaQuadradoVerde();
+	//quadrados um do lado do outro
+	desenhaQuadrado(0, 0, "green");
+	desenhaQuadrado(50, 0, "green");
+	desenhaQuadrado(100, 0, "green");
+
+	//quadrados um de baixo do outro
+	desenhaQuadrado(170, 0, "red");
+	desenhaQuadrado(170, 50, "red");
+	desenhaQuadrado(170, 100, "red");
 </script>
