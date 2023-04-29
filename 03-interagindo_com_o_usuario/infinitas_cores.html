@@ -10,10 +10,11 @@ Escolha uma cor <input type="color">
   var desenha = false;
 
   function desenhaCirculo(evento) {
+    var cor = document.querySelector("input").value;
     if (desenha) {
       var x = evento.pageX - tela.offsetLeft;
       var y = evento.pageY - tela.offsetTop;
-      pincel.fillStyle = 'blue';
+      pincel.fillStyle = cor;
       pincel.beginPath();
       pincel.arc(x, y, 10, 0, 2 * 3.14);
       pincel.fill();
