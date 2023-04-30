@@ -18,6 +18,12 @@
 		pincel.clearRect(0, 0, 600, 400);
 	}
 
-	limpaTela();
-	desenhaCirculo(x, 20, 10);
+	var x = 20;
+	function atualizaTela() {
+		limpaTela();
+		desenhaCirculo(x, 20, 10);
+		x++;
+	}
+
+	setInterval(atualizaTela, 20);
 </script>
